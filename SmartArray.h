@@ -1,9 +1,11 @@
-#pragma once
+﻿#pragma once
 
 class SmartArray
 {
 public:
 	SmartArray(size_t size);
+	SmartArray(const SmartArray&) = delete;
+	SmartArray& operator=(const SmartArray&) = delete;
 	~SmartArray();
 	void addElement(int value);
 	int getElement(size_t index);

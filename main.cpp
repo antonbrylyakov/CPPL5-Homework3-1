@@ -17,6 +17,9 @@ int main()
 		{
 			std::cout << "arr[" << i << "]: " << arr.getElement(i) << std::endl;
 		}
+
+		// Не скомпилируется: конструктор копирования удален
+		// SmartArray arr1 = arr;
 	}
 	catch (const std::exception& ex) {
 		std::cout << ex.what() << std::endl;
